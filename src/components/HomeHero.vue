@@ -47,6 +47,7 @@ export default {
   }
 
   @media (max-width: 675px) {
+    max-height: 843px;
     border-radius: 0;
   }
 
@@ -68,17 +69,18 @@ export default {
   .right {
     position: relative;
     z-index: 1;
-    width: 50%;
 
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+    //@media (max-width: 768px) {
+    //  width: 100%;
+    //}
   }
 
   .left {
+    max-width: 540px;
     padding: 145px 0 145px 95px;
 
     @media (max-width: 768px) {
+      max-width: 100%;
       padding: 60px 60px 457px;
       text-align: center;
     }
@@ -92,13 +94,21 @@ export default {
     position: absolute;
     right: 0;
     bottom: -30%;
+    width: calc(100% - 540px);
 
     @media (max-width: 768px) {
-      right: -5%;
+      width: 100%;
+      right: auto;
+      left: 50%;
       bottom: -45%;
+      transform: translateX(-50%);
+
+      img {
+        margin: auto;
+      }
     }
 
-    @media (max-width: 675px) {
+    @media (max-width: 555px) {
       bottom: -32.5%;
     }
   }

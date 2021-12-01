@@ -82,6 +82,11 @@ body {
 
     .main-wrapper {
       height: 100%;
+      padding-top: 155px;
+
+      @media(max-width: 675px) {
+        padding-top: 96px;
+      }
     }
 
     .background-leaf {

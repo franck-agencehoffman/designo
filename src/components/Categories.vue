@@ -119,6 +119,7 @@ export default {
     h2 {
       margin-bottom: 24px;
       color: $white;
+      text-transform: uppercase;
     }
 
     .subtitle {
