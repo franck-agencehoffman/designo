@@ -105,8 +105,9 @@ export default {
     }
 
     @media (max-width: 555px) {
-      width: 80%;
-      bottom: -10%;
+      left: calc(50% + 15px);
+      width: calc(100% + 90px);
+      bottom: -15%;
     }
 
     img {
