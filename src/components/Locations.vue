@@ -127,7 +127,14 @@ export default {
       h2 {
         margin-bottom: 24px;
         color: $peach;
-        text-align: center;
+
+        @media (max-width: 768px) {
+          text-align: left;
+        }
+
+        @media (max-width: 675px) {
+          text-align: center;
+        }
       }
 
       .content {
@@ -145,10 +152,15 @@ export default {
       .col {
         width: 50%;
 
+        &:first-of-type {
+          margin-right: 30px;
+        }
+
         @media (max-width: 675px) {
           width: 100%;
 
           &:first-of-type {
+            margin-right: 0;
             margin-bottom: 24px;
           }
         }
