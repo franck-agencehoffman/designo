@@ -120,10 +120,14 @@ export default {
 
   h1 {
     color: $white;
-    margin-bottom: 11px;
+    margin-bottom: 32px;
 
     @media (max-width: 768px) {
-      margin-bottom: 15px;
+      margin-bottom: 29px;
+    }
+
+    @media (max-width: 675px) {
+      margin-bottom: 24px;
     }
   }
 
@@ -135,6 +139,10 @@ export default {
     @media (max-width: 768px) {
       max-width: 440px;
       margin: 0 auto 19px;
+    }
+
+    @media (max-width: 675px) {
+      margin: 0 auto 24px;
     }
   }
 }
