@@ -50,7 +50,7 @@ export default {
   }
 
   &.is-big {
-    grid-template-columns: calc(50% - 10px) calc(50% - 10px) calc(50% - 10px);
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
     grid-template-rows: 308px 308px;
     grid-auto-flow: column;
 
