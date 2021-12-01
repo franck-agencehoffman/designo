@@ -76,7 +76,7 @@ export default {
   }
 
   .left {
-    max-width: 540px;
+    max-width: 636px;
     padding: 145px 0 145px 95px;
 
     @media (max-width: 768px) {
@@ -93,23 +93,28 @@ export default {
   .right {
     position: absolute;
     right: 0;
-    bottom: -30%;
-    width: calc(100% - 540px);
+    bottom: 0;
+    width: calc(100% - 636px);
 
     @media (max-width: 768px) {
       width: 100%;
       right: auto;
       left: 50%;
-      bottom: -45%;
+      bottom: -15%;
       transform: translateX(-50%);
-
-      img {
-        margin: auto;
-      }
     }
 
     @media (max-width: 555px) {
-      bottom: -32.5%;
+      width: 80%;
+      bottom: -10%;
+    }
+
+    img {
+      margin-left: auto;
+
+      @media (max-width: 768px) {
+        margin: 0 auto;
+      }
     }
   }
 
@@ -123,8 +128,9 @@ export default {
   }
 
   p {
-    color: $white;
+    max-width: 445px;
     margin-bottom: 40px;
+    color: $white;
 
     @media (max-width: 768px) {
       max-width: 440px;
