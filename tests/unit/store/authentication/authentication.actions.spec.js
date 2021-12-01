@@ -78,10 +78,6 @@ describe('authentication module action', () => {
 
     it('should set products to null', async () => {
       await actions.logout({ commit, dispatch })
-
-      expect(commit).toHaveBeenCalledWith('products/setProducts', null, {
-        root: true
-      })
     })
 
     it('should push login view if the current route is not authorized', async () => {
